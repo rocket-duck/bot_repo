@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "smb-bot"
+version = "0.1.0"
+description = ""
+authors = ["void_duck"]
+readme = "README.md"
+packages = [
+  { include = "bot" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.15.0"
+openai = "^1.57.2"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bot = "bot.main:main"
+
+
+
